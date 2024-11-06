@@ -1,0 +1,279 @@
+/* Fish Orders Section */
+.fish-orders-section {
+  margin-top: 20px; /* Space above the section */
+  padding: 20px; /* Padding for inner spacing */
+  background-color: rgb(249, 249, 249); /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Scrollable container for Fish Orders */
+.fish-orders-scroll-container {
+  max-height: 300px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 10px; /* Space above the container */
+  border: 1px solid #ddd; /* Border around the container */
+  border-radius: 8px; /* Rounded corners */
+  background-color: rgb(249, 249, 249); /* Background color */
+}
+/* Title for Fish Orders */
+.fish-orders-title {
+  font-size: 24px; /* Font size */
+  margin-bottom: 16px; /* Space below the title */
+  font-weight: bold; /* Bold text */
+  text-align: left; /* Align text to the left */
+}
+.ant-modal-title {
+  text-align: center; /* Center align the text */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+/* Optional: Adjust the font size and weight if needed */
+.ant-modal-title h2 {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make the title bold */
+}
+/* Table styling */
+.fixed-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Merge borders */
+}
+
+/* Table Header */
+.fixed-table thead {
+  background-color: #ff7700; /* Header background color */
+  color: white; /* Header text color */
+}
+
+.fixed-table th {
+  padding: 10px; /* Padding for header cells */
+  text-align: left; /* Align text to the left */
+}
+
+/* Table Body */
+.fixed-table tbody tr {
+  background-color: #ffffff; /* Row background color */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.fixed-table tbody tr:hover {
+  background-color: #ff770070; /* Light hover background */
+}
+
+/* Table Data Cells */
+.fixed-table td {
+  padding: 10px; /* Padding for data cells */
+  border-bottom: 1px solid #ddd; /* Bottom border for rows */
+}
+
+/* Input Fields */
+.custom-input {
+  width: 100%; /* Full width of the table cell */
+    padding: 8px; /* Padding for a comfortable touch */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-top: 5px; /* Space above the input */
+    font-size: 14px; /* Font size for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+/* Input Focus State */
+.custom-input:focus {
+  border-color: #ff7700; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(255, 119, 0, 0.4); /* Add subtle shadow */
+}
+
+/* Add Fish Button */
+.add-button {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 15px; /* Padding for button */
+  background-color: #ff7700; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: orangered; /* Change background on hover */
+}
+
+/* Delete Button */
+.delete-button {
+  padding: 5px 10px; /* Padding for button */
+  background-color: #ff4d4d; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a; /* Change background on hover */
+}
+/* Overall page layout */
+/* .delivery-page {
+    display: flex;
+    height: 100vh;
+  } */
+  .placeorder-page {
+
+    height: 105vh; /* Chiều cao toàn bộ viewport */
+
+}
+  /* Left Section: Form and Vehicle Selection */
+  .left-section {
+    text-align: left;
+    margin-bottom: 120px;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    border-radius: 10px;
+    width: 500px;
+    max-height:80vh;
+    
+    /* Animation properties */
+    animation: slideInFade 0.5s ease-out;
+    animation-fill-mode: both;
+  }
+  
+  /* Section titles */
+  .section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  /* Route form styling */
+  .route-form {
+    margin-bottom: 20px;
+  }
+  
+  .route-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin-top: 20px;
+    width: 100% !important;
+    height: 40px;
+    background-color: #ff7700;
+  }
+  .submit-btn:hover {
+    background-color: orangered !important;
+  }
+  
+ 
+  
+  /* Map Section */
+  .map-section {
+    position: relative;
+    
+  }
+  
+  .map-section .ant-col {
+    height: 100%;
+  }
+
+  .vehicle-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .vehicle-radio-group .ant-radio-inner {
+   display: none; /* Ẩn vòng tròn tick */   
+  }
+  .vehicle-radio-group div {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .vehicle-radio-group .ant-radio-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid ; /* border color */
+    padding: 30px;
+    border-radius: 8px;
+    margin-right: 15px; /* space between items */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .vehicle-scroll-container {
+    overflow-y: auto;  /* Thêm thanh cuộn dọc nếu nội dung vượt quá chiều cao */
+    border: 1px solid #d9d9d9; /* Thêm viền cho container */
+    border-radius: 4px; /* Bo góc cho container */
+    padding: 10px; /* Thêm khoảng cách bên trong */
+}
+  .vehicle-radio-group .ant-radio-wrapper:hover {
+    background-color: #ff770070; /* light hover background */
+    border-color: #ff7700; /* change border on hover */
+  }
+  
+  .vehicle-radio-group .ant-radio {
+    margin-right: 10px;
+  }
+  
+  .vehicle-radio-group img {
+    width: 80px; /* adjust as needed */
+    height: auto;
+    margin-right: 10px; /* space between icon and text */
+  }
+  
+  .vehicle-radio-group span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .vehicle-radio-group .ant-radio-wrapper-checked {
+    background-color: #ff770070; /* change background when selected */
+    border-color: #ff7700;
+  }
+  
+  .vehicle-radio-group .ant-radio-wrapper-checked img {
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2)); /* add a small shadow to selected image */
+  }
+  .distance-display {
+    background-color: whitesmoke; /* Light background color */
+    border: 1px solid #ff7700; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    margin-top: 20px; /* Space above the element */
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: black; /* Dark text color */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+  .additional-services .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-services .ant-checkbox-wrapper  {
+    margin-bottom: 10px; /* Adds spacing between checkboxes */
+  }
+  
+/* Keyframes for the slide-in and fade-in effect */
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

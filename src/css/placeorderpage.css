@@ -1,0 +1,185 @@
+
+  .placeorder-page {
+
+    height: 105vh; 
+
+}
+  
+  .left-section {
+    text-align: left;
+    margin-bottom: 120px;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    border-radius: 10px;
+    width: 500px;
+    animation: slideInFade 0.5s ease-out;
+    animation-fill-mode: both;
+    max-height: 95vh !important;
+    height: 100%;
+  }
+  
+  /* Section titles */
+  .section-title {
+    text-align: left !important;
+    font-size: 24px !important;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Route form styling */
+  .route-form {
+    margin-bottom: 20px;
+  }
+  
+  .route-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #ff7700;
+  }
+  .submit-btn:hover {
+    background-color: orangered !important;
+  }
+  
+ 
+  
+  /* Map Section */
+  .map-section {
+    position: relative;
+    height: 95vh;
+    
+  }
+  
+  .map-section .ant-col {
+    height: 100%;
+  }
+
+  .vehicle-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .vehicle-radio-group .ant-radio-inner {
+   display: none; /* Ẩn vòng tròn tick */   
+  }
+  .vehicle-radio-group div {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .vehicle-radio-group .ant-radio-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid ; /* border color */
+    padding: 30px;
+    border-radius: 8px;
+    margin-right: 15px; /* space between items */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .vehicle-scroll-container {
+    overflow-y: auto;  /* Thêm thanh cuộn dọc nếu nội dung vượt quá chiều cao */
+    border: 1px solid #d9d9d9; /* Thêm viền cho container */
+    border-radius: 4px; /* Bo góc cho container */
+    padding: 10px; /* Thêm khoảng cách bên trong */
+}
+  .vehicle-radio-group .ant-radio-wrapper:hover {
+    background-color: #ff770070; /* light hover background */
+    border-color: #ff7700; /* change border on hover */
+  }
+  
+  .vehicle-radio-group .ant-radio {
+    margin-right: 10px;
+  }
+  
+  .vehicle-radio-group img {
+    width: 80px; /* adjust as needed */
+    height: auto;
+    margin-right: 10px; /* space between icon and text */
+  }
+  
+  .vehicle-radio-group span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .vehicle-radio-group .ant-radio-wrapper-checked {
+    background-color: #ff770070; /* change background when selected */
+    border-color: #ff7700;
+  }
+  
+  .vehicle-radio-group .ant-radio-wrapper-checked img {
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2)); /* add a small shadow to selected image */
+  }
+  .detail-service-btn {
+    text-decoration: none;
+    color: #ff7700;
+    margin-left: 20px;
+  }
+  .detail-service-btn:hover {
+    color: orangered;
+  }
+  
+  .distance-display {
+    background-color: whitesmoke; /* Light background color */
+    border: 1px solid #ff7700; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    margin-top: 20px; /* Space above the element */
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: black; /* Dark text color */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 15px;
+  }
+
+  .additional-services .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-services .ant-checkbox-wrapper  {
+    margin-bottom: 10px; /* Adds spacing between checkboxes */
+  }
+  
+/* Keyframes for the slide-in and fade-in effect */
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.additional-services {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.service-price {
+  color: #1890ff;
+  font-weight: 500;
+}

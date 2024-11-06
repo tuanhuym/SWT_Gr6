@@ -1,0 +1,62 @@
+.authen-template {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521584934521-f27ac11b7523?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authen-template__form {
+    width: 400px;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Additional styles for form elements */
+.authen-template__form h2 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.authen-template__form .ant-form-item {
+    margin-bottom: 20px;
+}
+
+.authen-template__form .ant-input-affix-wrapper {
+    border-radius: 6px;
+}
+
+.authen-template__form .ant-btn-primary {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    transition: all 0.3s ease;
+}
+
+.authen-template__form .ant-btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.authen-template__form a {
+    color: #1890ff;
+    transition: color 0.3s ease;
+}
+
+.authen-template__form a:hover {
+    color: #40a9ff;
+}

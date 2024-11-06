@@ -1,0 +1,258 @@
+*{
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif !important; 
+}
+body {
+  
+}
+
+.content-section {
+    padding: 0px 5vw;
+    
+
+  }
+  .order-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .create-order-button {
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .create-order-button:hover {
+    background-color: #FF7F00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  .create-order-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 40px;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transition for animation */
+  }
+  
+  /* When row becomes visible, apply the animation */
+  .row.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide back to its normal position */
+  }
+  
+  .row.reverse {
+    flex-direction: row-reverse; /* Flip image and text positions */
+  }
+  
+  .content-image {
+    width: 450px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px; /* Rounded corners for softer look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  .content-image:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight lift and scale on hover */
+  }
+  
+  .content-text {
+    max-width: 550px;
+  }
+  
+  .content-text h2 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better contrast */
+    font-weight: 700; /* Bolder font weight */
+  }
+  
+  .content-text p {
+    font-size: 1.1rem; /* Slightly larger font size */
+  line-height: 1.7; /* Increased line height for better readability */
+    color: #555; /* Softer color for body text */
+  }
+  
+  .divider {
+      height: 3px; /* Slightly thicker divider */
+      width: 80%; /* Not full width for a more refined look */
+      background: linear-gradient(to right, transparent, #ff7700, transparent); /* Gradient divider */
+      margin: 60px auto; /* Increased margin */
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 250px;
+  margin-top: 5rem;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(300px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.item:hover {
+  transform: translateY(-5px) scale(1.05); /* Slight lift and scale on hover */
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/header.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button, .secondary-button {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Shipping Features */
+.shipping-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 5vw;
+  background-color: #fff;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #FF8C00;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
